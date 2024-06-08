@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orderNumber": {
+      "type": "string",
+      "maxLength": 35,
+      "required": true,
+      "unique": true
+    },
+    "placed": {
+      "type": "datetime",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Placed",
+        "Ongoing",
+        "Completed"
+      ],
+      "default": "Placed",
+      "required": true
+    },
+    " ": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "orders"
+    },
+    "county": {
+      "type": "string",
+      "maxLength": 35
+    },
+    "email": {
+      "type": "email",
+      "maxLength": 35
+    },
+    "firstName": {
+      "type": "string",
+      "maxLength": 35
+    },
+    "lastName": {
+      "type": "string",
+      "maxLength": 35
+    },
+    "locality": {
+      "type": "string",
+      "maxLength": 35
+    },
+    "paymentMethod": {
+      "type": "string",
+      "maxLength": 35
+    },
+    "phoneNo": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "totalAmmount": {
+      "type": "string",
+      "maxLength": 35
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

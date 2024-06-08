@@ -1,0 +1,43 @@
+{
+    "collectionName": "components_attribute_sets_pc_peripherals_attributes",
+    "info": {
+        "displayName": "PC Peripherals",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "Tip_conector": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        },
+        "Tip_interfata": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        },
+        "Numar_butoane": {
+            "type": "number",
+            "required": false
+        },
+        "Tehnologie_wireless": {
+            "type": "string",
+            "required": false,
+            "maxLength": 50
+        },
+        "Compatibilitate_sistem_operare": {
+            "type": "string",
+            "required": true,
+            "maxLength": 50
+        },
+        "Greutate": {
+            "type": "number",
+            "required": true
+        },
+        "Dimensiuni": {
+            "type": "string",
+            "required": true,
+            "maxLength": 50
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_attribute_sets_laptops_attributes",
+  "info": {
+    "displayName": "Laptops",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Viteza_Procesor": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35
+    },
+    "Capacitate_MemorieRAM_filterable": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35
+    },
+    "Capacitate_MemorieDeStocare": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "Dimensiune_Display_filterable": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "SistemDeOperare_Software_filterable": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35
+    },
+    "Autonomie_Baterie_filterable": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35
+    },
+    "Viteza_MemorieRAM": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

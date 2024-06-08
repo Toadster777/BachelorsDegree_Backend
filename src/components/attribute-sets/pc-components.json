@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_attribute_sets_pc_components",
+  "info": {
+    "displayName": "PC Components"
+  },
+  "options": {},
+  "attributes": {
+    "tip_procesor": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35
+    }
+  }
+}

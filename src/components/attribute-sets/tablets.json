@@ -1,0 +1,44 @@
+{
+    "collectionName": "components_attribute_sets_tablets_attributes",
+    "info": {
+        "displayName": "Tablets",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "Dimensiune_ecran": {
+            "type": "string",
+            "required": true,
+            "maxLength": 20
+        },
+        "Rezolutie_ecran": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        },
+        "Memorie_interna": {
+            "type": "string",
+            "required": true,
+            "maxLength": 50
+        },
+        "Procesor": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        },
+        "Sistem_operare": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        },
+        "Greutate": {
+            "type": "number",
+            "required": true
+        },
+        "Autonomie_baterie": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        }
+    }
+}

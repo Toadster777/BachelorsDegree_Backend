@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_laptop_subcategory_rams",
+  "info": {
+    "displayName": "RAM"
+  },
+  "options": {},
+  "attributes": {
+    "RAM": {
+      "type": "string"
+    }
+  }
+}

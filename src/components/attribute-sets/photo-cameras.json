@@ -1,0 +1,44 @@
+{
+    "collectionName": "components_attribute_sets_photo_cameras_attributes",
+    "info": {
+        "displayName": "Photo Cameras",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "Rezolutie": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        },
+        "Tip_senzor": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        },
+        "Zoom_optic": {
+            "type": "string",
+            "required": true,
+            "maxLength": 35
+        },
+        "Stabilizator_imagine": {
+            "type": "string",
+            "required": false,
+            "maxLength": 35
+        },
+        "Tip_baterie": {
+            "type": "string",
+            "required": false,
+            "maxLength": 35
+        },
+        "Greutate": {
+            "type": "number",
+            "required": true
+        },
+        "Dimensiuni": {
+            "type": "string",
+            "required": true,
+            "maxLength": 50
+        }
+    }
+}
