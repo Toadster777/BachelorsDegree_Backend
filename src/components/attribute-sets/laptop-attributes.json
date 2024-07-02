@@ -39,6 +39,11 @@
     "Viteza_MemorieRAM": {
       "type": "string",
       "required": true
+    },
+    "Producator_Produs_filterable": {
+      "type": "string",
+      "maxLength": 35,
+      "required": true
     }
   }
 }

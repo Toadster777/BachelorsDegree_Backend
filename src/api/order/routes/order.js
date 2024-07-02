@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use strict';
 
 /**
@@ -6,4 +7,32 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::order.order');
+
+const defaultRouter = createCoreRouter('api::order.order');
+
+const customRouter = (innerRouter, extraRoutes = []) => {
+    let routes;
+    return {
+        get prefix() {
+            return innerRouter.prefix;
+        },
+        get routes() {
+            if (!routes) routes = extraRoutes.concat(innerRouter.routes);
+            return routes;
+        },
+    };
+};
+
+
+const myExtraRoutes = [
+    {
+        method: 'GET',
+        path: '/orders/user/:userId',
+        handler: 'order.findUserOrders',
+        config: {
+            auth: false, // or true, depending on your authentication strategy
+        },
+    },
+];
+
+module.exports = customRouter(defaultRouter, myExtraRoutes);

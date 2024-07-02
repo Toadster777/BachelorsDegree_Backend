@@ -25,11 +25,11 @@
     "status": {
       "type": "enumeration",
       "enum": [
-        "Placed",
-        "Ongoing",
-        "Completed"
+        "Plasata",
+        "In derulare",
+        "Finalizata"
       ],
-      "default": "Placed",
+      "default": "Plasata",
       "required": true
     },
     "user": {

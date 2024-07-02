@@ -42,11 +42,6 @@
     "description": {
       "type": "text"
     },
-    "price": {
-      "type": "string",
-      "maxLength": 35,
-      "required": true
-    },
     "carouselMedia": {
       "type": "media",
       "multiple": true,
@@ -67,6 +62,10 @@
       "type": "integer",
       "required": true,
       "min": 0
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
     }
   }
 }
